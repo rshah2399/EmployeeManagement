@@ -1,0 +1,131 @@
+/* -------------------- 1. LOGIN & FORGOT PASSWORD PAGE -------------------- */
+.login-form {
+  margin-top: 4rem; /* Updated to rem for consistency */
+}
+
+.hertzsoft-image {
+  width: 20%;
+}
+
+.login-form .nav-image {
+  height: 3rem; /* Updated to rem */
+}
+
+/* -------------------- 2. SCROLLBAR -------------------- */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* -------------------- 3. NAVBAR -------------------- */
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 10; /* Increased for better layering */
+  background-color: white;
+}
+
+.sidebar {
+  position: fixed !important;
+  height: 100vh;
+  z-index: 5;
+  transition: all 0.3s ease-in-out; /* Added transition from previous revamp */
+}
+
+.navbar .nav-image {
+  height: 3rem;
+}
+
+ul.sidebar-links {
+  padding-inline-start: 0;
+}
+
+.sidebar-links li {
+  display: block;
+  padding: 0.5rem;
+  font-size: 0.875rem; /* 14px */
+}
+
+.sidebar-links li a:link,
+.sidebar-links li a:visited {
+  color: #000;
+}
+
+.sidebar-links li i {
+  margin-right: 0.625rem; /* 10px */
+  color: #9a9a9a;
+}
+
+.sidebar-links li a:hover i,
+.sidebar-links li a:hover,
+.sidebar-links li a.active,
+.sidebar-links li a.active i {
+  color: #4285f4;
+}
+
+/* -------------------- 4. PAGE CONTAINER -------------------- */
+.page-container {
+  padding: 1.25rem; /* 20px */
+}
+
+.page-card-container {
+  margin-top: 0;
+  padding: 0.625rem; /* 10px */
+}
+
+.page-card {
+  padding: 1.25rem; /* 20px */
+}
+
+/* Breadcrumbs are removed in revamp, but kept here for reference */
+.breadcrump li {
+  display: inline;
+}
+
+.breadcrump li::after {
+  content: " > ";
+}
+
+.breadcrump li:last-child:after {
+  content: '';
+}
+
+.breadcrump li.active a:link,
+.breadcrump li.active a:visited,
+.breadcrump li.active a:hover {
+  color: #c9c9c9;
+}
+
+/* -------------------- 5. FOOTER -------------------- */
+footer .poweredBy {
+  float: right;
+}
+
+footer .hertzsoft-image {
+  width: 6.25rem; /* 100px */
+}
+
+@media only screen and (max-width: 786px) {
+  footer .poweredBy {
+      float: none;
+  }
+  footer {
+      text-align: center;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  footer .poweredBy {
+      float: right;
+      text-align: right;
+  }
+}
